@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import { css } from 'react-emotion';
 import { Box, Flex } from 'grid-styled/emotion';
 
+import logo from '../../../assets/svgs/logo.svg';
+
 const mr = css`
 	margin-right: 1rem;
 `;
@@ -23,25 +25,21 @@ export default () => (
 				className={css`
 					text-shadow: none;
 					background-image: none;
-					position: static;
-					top: 10px;
-					left: 20px;
 					flex-grow: 1;
 				`}
 			>
-				<h3>Spacebar</h3>
+				<img src={logo} className={css`
+					maxWidth: 200px;
+				`}/>
 			</Link>
 			<ul
 				className={css`
 					display: flex;
 					list-style: none;
-					justify-content: center;
 				`}
 			>
 				<ListLink to="/contact/">Contact</ListLink>
-				<li className={mr}>
-					<a href="https://medium.com/@jishaal">Blog</a>
-				</li>
+				<ListLink to="/blog/">Blog</ListLink>
 				<li>
 					<a href="https://github.com/jishaal" rel="noopener">
 						Github
