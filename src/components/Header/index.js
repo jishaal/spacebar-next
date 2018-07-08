@@ -29,7 +29,8 @@ export default () => (
 				`}
 			>
 				<img src={logo} className={css`
-					maxWidth: 200px;
+					max-width: 200px;
+					margin-bottom: 0;
 				`}/>
 			</Link>
 			<ul
