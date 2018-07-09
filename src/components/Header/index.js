@@ -18,35 +18,36 @@ const ListLink = props => (
 const Header = Flex.withComponent('header');
 
 export default () => (
-	<Box mb={50}>
-		<Header display="flex">
-			<Link
-				to="/"
+	<Header display="flex">
+		<Link
+			to="/"
+			className={css`
+				text-shadow: none;
+				background-image: none;
+				flex-grow: 1;
+			`}
+		>
+			<img
+				src={logo}
 				className={css`
-					text-shadow: none;
-					background-image: none;
-					flex-grow: 1;
-				`}
-			>
-				<img src={logo} className={css`
 					max-width: 200px;
 					margin-bottom: 0;
-				`}/>
-			</Link>
-			<ul
-				className={css`
-					display: flex;
-					list-style: none;
 				`}
-			>
-				<ListLink to="/contact/">Contact</ListLink>
-				<ListLink to="/blog/">Blog</ListLink>
-				<li>
-					<a href="https://github.com/jishaal" rel="noopener">
-						Github
-					</a>
-				</li>
-			</ul>
-		</Header>
-	</Box>
+			/>
+		</Link>
+		<ul
+			className={css`
+				display: flex;
+				list-style: none;
+			`}
+		>
+			<ListLink to="/contact/">Contact</ListLink>
+			<ListLink to="/blog/">Blog</ListLink>
+			<li>
+				<a href="https://github.com/jishaal" rel="noopener">
+					Github
+				</a>
+			</li>
+		</ul>
+	</Header>
 );
