@@ -11,8 +11,11 @@ export default () => (
 							node {
 								id
 								title
+								firstPublishedAt
+								slug
 								virtuals {
 									subtitle
+									readingTime
 									previewImage {
 										imageId
 									}
