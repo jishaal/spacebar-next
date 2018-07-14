@@ -3,6 +3,7 @@ import styled from 'react-emotion';
 import { Box } from 'grid-styled/emotion';
 
 import Layout, { Container } from '../components/Layout';
+import Medium from '../components/Medium';
 
 const Anchor = styled('a')`
 	color: ${props => props.theme.colors.blue};
@@ -32,6 +33,11 @@ export default () => (
 						<strong>Redux</strong> and <strong>Node.js</strong>, writing performant and
 						maintainable <strong>JavaScript</strong> code.
 					</p>
+				</Box>
+			</Container>
+			<Container>
+				<Box width={[1, 1, 1 / 2]} py={[1, 2, 3]}>
+					<Medium/>
 				</Box>
 			</Container>
 		</Box>

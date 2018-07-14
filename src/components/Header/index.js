@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { css } from 'react-emotion';
-import { Box, Flex } from 'grid-styled/emotion';
+import { Flex } from 'grid-styled/emotion';
 
 import logo from '../../../assets/svgs/logo.svg';
 
