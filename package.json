@@ -14,7 +14,7 @@
     "emotion-theming": "^9.2.5",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "gatsby": "2.0.0-beta.29",
+    "gatsby": "next",
     "gatsby-plugin-emotion": "next",
     "gatsby-plugin-typography": "next",
     "gatsby-source-medium": "next",
