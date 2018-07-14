@@ -58,7 +58,8 @@ export default () => (
 										</Anchor>
 									</h3>
 									<p>{post.virtuals.subtitle}</p>
-									<span>{post.firstPublishedAt}</span>{' · '}
+									<span>{post.firstPublishedAt}</span>
+									{' · '}
 									<span>{post.virtuals.readingTime}</span>
 								</Box>
 							))}

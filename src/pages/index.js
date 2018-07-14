@@ -38,9 +38,8 @@ export default () => (
 		</Box>
 		<Box bg="blue" color="white">
 			<Container>
-				<Medium/>
+				<Medium />
 			</Container>
 		</Box>
-
 	</Layout>
 );
