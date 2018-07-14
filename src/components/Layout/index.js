@@ -9,7 +9,7 @@ export const Container = ({ children }) => (
 		m="0 auto"
 		p="1.5rem 2rem"
 		className={css`
-			max-width: 80em;
+			max-width: 63rem;
 		`}
 	>
 		{children}

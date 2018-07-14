@@ -35,11 +35,12 @@ export default () => (
 					</p>
 				</Box>
 			</Container>
+		</Box>
+		<Box bg="blue" color="white">
 			<Container>
-				<Box width={[1, 1, 1 / 2]} py={[1, 2, 3]}>
-					<Medium/>
-				</Box>
+				<Medium/>
 			</Container>
 		</Box>
+
 	</Layout>
 );
