@@ -36,6 +36,10 @@ const MobileMenuButton = styled('button')`
 	bottom: 0;
 	left: 0;
 	z-index: 2;
+	border: none;
+	box-shadow: 0px -2px 14px -3px #e2e2e2;
+	background: white;
+	
 	@media (min-width: 40em) {
 		display: none;
 	}
@@ -44,13 +48,12 @@ const MobileMenuButton = styled('button')`
 class NavMenu extends Component {
 	state = { isOpen: false };
 	render() {
-		console.log(this.state.isOpen);
 		return (
 			<Fragment>
 				<MobileMenuButton
 					onClick={() => this.setState(prevState => ({ isOpen: !prevState.isOpen }))}
 				>
-					^
+					{this.state.isOpen ? '↓' : '↑'}
 				</MobileMenuButton>
 				<ul
 					className={css`
@@ -70,6 +73,8 @@ class NavMenu extends Component {
 						transform: translate(0, ${!this.state.isOpen ? '100vh' : 0});
 						transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.16, 0.99),
 							color 0.3s ease;
+						padding-top: 1rem;
+						box-shadow: 0px -2px 14px -3px #e2e2e2;
 						@media (min-width: 40em) {
 							flex-direction: row;
 							height: auto;
@@ -77,6 +82,8 @@ class NavMenu extends Component {
 							position: inherit;
 							transform: none;
 							background: white;
+							box-shadow: none;
+							padding-top: 0;
 						}
 
 						a {
