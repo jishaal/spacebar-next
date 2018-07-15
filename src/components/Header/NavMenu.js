@@ -89,11 +89,15 @@ class NavMenu extends Component {
 						margin: 0;
 						height: 50vh;
 						background: ${this.props.theme.colors.white};
+						border-top-left-radius: 0.75rem;
+						border-top-right-radius: 0.75rem;
+						padding: 1rem 0.75rem;
+						z-index: 3;
+
 						transform: translate(0, ${!this.state.isOpen ? '100vh' : 0});
 						transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.16, 0.99),
 							color 0.3s ease;
-						padding-top: 1rem;
-						z-index: 3;
+
 						@media (min-width: 40em) {
 							flex-direction: row;
 							height: auto;
