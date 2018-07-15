@@ -35,11 +35,28 @@ const MobileMenuButton = styled('button')`
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 4;
 	border: none;
-	box-shadow: 0px -2px 14px -3px #e2e2e2;
+	box-shadow: 0px -2px 14px -3px #b7b3b3;
 	background: white;
-	
+
+	@media (min-width: 40em) {
+		display: none;
+	}
+`;
+
+const Mask = styled('div')`
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	background: ${props => props.theme.colors.blue};
+	opacity: 0.5;
+
 	@media (min-width: 40em) {
 		display: none;
 	}
@@ -47,12 +64,14 @@ const MobileMenuButton = styled('button')`
 
 class NavMenu extends Component {
 	state = { isOpen: false };
+	toggleMenu = () => {
+		this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+	};
 	render() {
 		return (
 			<Fragment>
-				<MobileMenuButton
-					onClick={() => this.setState(prevState => ({ isOpen: !prevState.isOpen }))}
-				>
+				{this.state.isOpen && <Mask onClick={this.toggleMenu} />}
+				<MobileMenuButton onClick={this.toggleMenu}>
 					{this.state.isOpen ? '↓' : '↑'}
 				</MobileMenuButton>
 				<ul
@@ -74,7 +93,7 @@ class NavMenu extends Component {
 						transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.16, 0.99),
 							color 0.3s ease;
 						padding-top: 1rem;
-						box-shadow: 0px -2px 14px -3px #e2e2e2;
+						z-index: 3;
 						@media (min-width: 40em) {
 							flex-direction: row;
 							height: auto;
@@ -82,7 +101,6 @@ class NavMenu extends Component {
 							position: inherit;
 							transform: none;
 							background: white;
-							box-shadow: none;
 							padding-top: 0;
 						}
 

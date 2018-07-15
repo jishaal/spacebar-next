@@ -17,7 +17,7 @@ export const Container = ({ children }) => (
 );
 
 export default ({ children }) => (
-	<Box>
+	<Box mb="2.75rem">
 		<Container>
 			<Header />
 		</Container>
