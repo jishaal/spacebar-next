@@ -105,7 +105,7 @@ class NavMenu extends Component {
 							position: inherit;
 							transform: none;
 							background: white;
-							padding-top: 0;
+							padding: 0;
 						}
 
 						a {

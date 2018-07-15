@@ -27,6 +27,7 @@ export default () => (
 				className={css`
 					max-width: 12rem;
 					margin-bottom: 0;
+					display: block;
 				`}
 			/>
 		</Link>
