@@ -40,6 +40,7 @@ const MobileMenuButton = styled('button')`
 	border: none;
 	box-shadow: 0px -2px 14px -3px #b7b3b3;
 	background: white;
+	cursor: pointer;
 	color: ${props => props.theme.colors.blue};
 
 	@media (min-width: 40em) {

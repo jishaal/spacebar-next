@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box } from 'grid-styled/emotion';
 import styled from 'react-emotion';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../Header/';
 
@@ -14,10 +16,40 @@ Container.defaultProps = {
 };
 
 export default ({ children }) => (
-	<Box mb="2.75rem">
-		<Container>
-			<Header />
-		</Container>
-		{children}
-	</Box>
+	<StaticQuery
+		query={graphql`
+			query SiteTitleQuery {
+				site {
+					siteMetadata {
+						title
+					}
+				}
+			}
+		`}
+		render={data => (
+			<>
+				<Helmet
+					title={data.site.siteMetadata.title}
+					meta={[
+						{
+							name: 'description',
+							content:
+								'Jishaal Kalyan is a software developer from Auckland, New Zealand. He specialises in frontend engineering, with a focus on the user experience.'
+						},
+						{
+							name: 'keywords',
+							content:
+								'jishaal, kalyan, developer, engineer, frontend, react, redux, javascript'
+						}
+					]}
+				/>
+				<Box mb={[4, 0]}>
+					<Container>
+						<Header />
+					</Container>
+					{children}
+				</Box>
+			</>
+		)}
+	/>
 );

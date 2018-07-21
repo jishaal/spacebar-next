@@ -1,4 +1,7 @@
 module.exports = {
+    siteMetadata: {
+        title: `Spacebar | Jishaal Kalyan - Frontend Developer from Auckland`,
+    },
 	plugins: [
 		{
 			resolve: `gatsby-plugin-typography`,
@@ -17,6 +20,9 @@ module.exports = {
 			options: {
 				username: `@jishaal`
 			}
-		}
+		},
+        {
+            resolve: `gatsby-plugin-react-helmet`,
+        },
 	]
 };

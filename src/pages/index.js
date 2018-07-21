@@ -25,14 +25,15 @@ export default () => (
 						Hi, I'm Jishaal
 					</h1>
 					<h3>
-						Frontend Engineer, currently at{' '}
+						Frontend Developer, currently at{' '}
 						<Anchor href="https://www.xero.com">Xero</Anchor>
 					</h3>
 					<p>
 						My passion is in the space of frontend engineering and how to manage this at
-						scale. I work with technologies such as <strong>React</strong>,{' '}
-						<strong>Redux</strong> and <strong>Node.js</strong>, writing performant and
-						maintainable <strong>JavaScript</strong> code.
+						scale while delivering the best experience for users. I work with
+						technologies such as <strong>React</strong>, <strong>Redux</strong> and{' '}
+						<strong>Node.js</strong>, writing performant and maintainable{' '}
+						<strong>JavaScript</strong> code.
 					</p>
 				</Box>
 			</Container>
