@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled, { css } from 'react-emotion';
 import { withTheme } from 'emotion-theming';
 import FaBars from 'react-icons/lib/fa/bars';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const ListItem = styled('li')`
 	margin: 0.25rem;
@@ -24,9 +25,9 @@ const ListLink = props => (
 
 const ListExternalLink = props => (
 	<ListItem>
-		<a href={props.to} rel="noopener">
+		<OutboundLink href={props.to} rel="noopener">
 			{props.children}
-		</a>
+		</OutboundLink>
 	</ListItem>
 );
 

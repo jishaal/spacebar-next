@@ -4,8 +4,9 @@ import FaLinkedIn from 'react-icons/lib/fa/linkedin';
 import FaInstagram from 'react-icons/lib/fa/instagram';
 import styled from 'react-emotion';
 import { Flex } from 'grid-styled/emotion';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-const Linked = styled('a')`
+const Linked = styled(OutboundLink)`
 	color: ${props => props.theme.colors.blue};
 	padding: 0.25rem;
 	display: block;
