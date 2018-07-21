@@ -28,21 +28,17 @@ export default ({ children }) => (
 		`}
 		render={data => (
 			<>
-				<Helmet
-					title={data.site.siteMetadata.title}
-					meta={[
-						{
-							name: 'description',
-							content:
-								'Jishaal Kalyan is a software developer from Auckland, New Zealand. He specialises in frontend engineering, with a focus on the user experience.'
-						},
-						{
-							name: 'keywords',
-							content:
-								'jishaal, kalyan, developer, engineer, frontend, react, redux, javascript'
-						}
-					]}
-				>
+				<Helmet>
+					<html lang="en" />
+					<title>{data.site.siteMetadata.title}</title>
+					<meta
+						name="description"
+						content="Jishaal Kalyan is a software developer from Auckland, New Zealand. He specialises in frontend engineering, with a focus on the user experience."
+					/>
+					<meta
+						name="keywords"
+						content=" jishaal, kalyan, developer, engineer, frontend, react, redux, javascript"
+					/>
 					<meta
 						name="google-site-verification"
 						content="eCbHLmj08tnfeqtRyBwrBgLmD-f_j2T-BfXzO9xU6FI"

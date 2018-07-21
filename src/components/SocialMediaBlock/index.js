@@ -20,13 +20,13 @@ const Linked = styled(OutboundLink)`
 
 const SocialMediaBlock = () => (
 	<Flex>
-		<Linked href="https://twitter.com/jishaal">
+		<Linked href="https://twitter.com/jishaal" aria-label="Twitter">
 			<FaTwitter size={36} />
 		</Linked>
-		<Linked href="https://linkedin.com/in/jishaal">
+		<Linked href="https://linkedin.com/in/jishaal" aria-label="LinkedIn">
 			<FaLinkedIn size={36} />
 		</Linked>
-		<Linked href="https://www.instagram.com/jishaal/">
+		<Linked href="https://www.instagram.com/jishaal/" aria-label="Instagram">
 			<FaInstagram size={36} />
 		</Linked>
 	</Flex>

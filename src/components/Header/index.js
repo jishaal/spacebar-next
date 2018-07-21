@@ -18,12 +18,14 @@ export default () => (
 	>
 		<Link
 			to="/"
+			aria-label="Spacebar"
 			className={css`
 				flex-grow: 1;
 			`}
 		>
 			<img
 				src={logo}
+				alt="Spacebar site logo"
 				className={css`
 					max-width: 12rem;
 					margin-bottom: 0;

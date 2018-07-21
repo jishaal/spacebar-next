@@ -75,7 +75,7 @@ class NavMenu extends Component {
 		return (
 			<Fragment>
 				{this.state.isOpen && <Mask onClick={this.toggleMenu} />}
-				<MobileMenuButton onClick={this.toggleMenu}>
+				<MobileMenuButton aria-label="Open navigation" onClick={this.toggleMenu}>
 					<FaBars />
 				</MobileMenuButton>
 				<ul

@@ -25,6 +25,7 @@ module.exports = {
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				name: 'Spacebar',
+                short_name: 'Spacebar',
 				start_url: '/',
 				background_color: '#fff',
 				theme_color: '#333EB7',
