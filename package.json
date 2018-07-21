@@ -17,6 +17,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "gatsby": "next",
     "gatsby-plugin-emotion": "next",
+    "gatsby-plugin-manifest": "^2.0.2-beta.2",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-typography": "next",
     "gatsby-source-medium": "next",

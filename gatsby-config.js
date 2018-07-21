@@ -1,7 +1,7 @@
 module.exports = {
-    siteMetadata: {
-        title: `Spacebar | Jishaal Kalyan - Frontend Developer from Auckland`,
-    },
+	siteMetadata: {
+		title: `Spacebar | Jishaal Kalyan - Frontend Developer from Auckland`
+	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-typography`,
@@ -10,10 +10,7 @@ module.exports = {
 			}
 		},
 		{
-			resolve: `gatsby-plugin-emotion`,
-			options: {
-				// Accepts all options defined by `babel-plugin-emotion` plugin.
-			}
+			resolve: `gatsby-plugin-emotion`
 		},
 		{
 			resolve: `gatsby-source-medium`,
@@ -21,8 +18,19 @@ module.exports = {
 				username: `@jishaal`
 			}
 		},
-        {
-            resolve: `gatsby-plugin-react-helmet`,
-        },
+		{
+			resolve: `gatsby-plugin-react-helmet`
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: 'Spacebar',
+				start_url: '/',
+				background_color: '#fff',
+				theme_color: '#333EB7',
+				display: 'browser',
+				icon: 'assets/favicon.png' // This path is relative to the root of the site.
+			}
+		}
 	]
 };
