@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Link } from 'gatsby';
 import styled, { css } from 'react-emotion';
 import { withTheme } from 'emotion-theming';
+import FaBars from 'react-icons/lib/fa/bars';
 
 const ListItem = styled('li')`
 	margin: 0.25rem;
@@ -31,7 +32,7 @@ const ListExternalLink = props => (
 
 const MobileMenuButton = styled('button')`
 	width: 100%;
-	height: 2.75rem;
+	height: 3rem;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -39,6 +40,7 @@ const MobileMenuButton = styled('button')`
 	border: none;
 	box-shadow: 0px -2px 14px -3px #b7b3b3;
 	background: white;
+	color: ${props => props.theme.colors.blue};
 
 	@media (min-width: 40em) {
 		display: none;
@@ -72,7 +74,7 @@ class NavMenu extends Component {
 			<Fragment>
 				{this.state.isOpen && <Mask onClick={this.toggleMenu} />}
 				<MobileMenuButton onClick={this.toggleMenu}>
-					{this.state.isOpen ? '↓' : '↑'}
+					<FaBars />
 				</MobileMenuButton>
 				<ul
 					className={css`
