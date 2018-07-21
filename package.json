@@ -19,14 +19,14 @@
     "gatsby-plugin-emotion": "next",
     "gatsby-plugin-typography": "next",
     "gatsby-source-medium": "next",
-    "grid-styled": "^4.3.2",
+    "grid-styled": "^5.0.2",
     "prettier": "^1.13.7",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-emotion": "^9.2.5",
     "react-icons": "^2.2.7",
     "react-typography": "^0.16.13",
-    "styled-system": "^2.3.3",
+    "styled-system": "^3.0.2",
     "typography": "^0.16.17"
   }
 }
