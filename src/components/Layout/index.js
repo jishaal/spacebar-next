@@ -42,7 +42,12 @@ export default ({ children }) => (
 								'jishaal, kalyan, developer, engineer, frontend, react, redux, javascript'
 						}
 					]}
-				/>
+				>
+					<meta
+						name="google-site-verification"
+						content="eCbHLmj08tnfeqtRyBwrBgLmD-f_j2T-BfXzO9xU6FI"
+					/>
+				</Helmet>
 				<Box mb={[4, 0]}>
 					<Container>
 						<Header />
