@@ -128,7 +128,7 @@ class NavMenu extends Component {
 						}
 					`}
 				>
-					<ListLink to="/about-me/">About Me</ListLink>
+					{/*<ListLink to="/about-me/">About Me</ListLink>*/}
 					<ListExternalLink to="https://medium.com/@jishaal/latest">
 						Medium
 					</ListExternalLink>
