@@ -24,6 +24,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-emotion": "^9.2.5",
+    "react-icons": "^2.2.7",
     "react-typography": "^0.16.13",
     "styled-system": "^2.3.3",
     "typography": "^0.16.17"

@@ -1,20 +1,17 @@
 import React from 'react';
 import { Box } from 'grid-styled/emotion';
-import { css } from 'react-emotion';
+import styled from 'react-emotion';
 
 import Header from '../Header/';
 
-export const Container = ({ children }) => (
-	<Box
-		m="0 auto"
-		p="1.5rem 2rem"
-		className={css`
-			max-width: 63rem;
-		`}
-	>
-		{children}
-	</Box>
-);
+export const Container = styled(Box)`
+	max-width: 63rem;
+`;
+
+Container.defaultProps = {
+	mx: 'auto',
+	p: '1.5rem 2rem'
+};
 
 export default ({ children }) => (
 	<Box mb="2.75rem">

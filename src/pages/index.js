@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { Box } from 'grid-styled/emotion';
+import { Box, Flex } from 'grid-styled/emotion';
 
 import Layout, { Container } from '../components/Layout';
 import Medium from '../components/Medium';
+import SocialMediaBlock from '../components/SocialMediaBlock';
 
 const Anchor = styled('a')`
 	color: ${props => props.theme.colors.blue};
@@ -41,5 +42,10 @@ export default () => (
 				<Medium />
 			</Container>
 		</Box>
+		<Container>
+			<Flex justifyContent="center">
+				<SocialMediaBlock />
+			</Flex>
+		</Container>
 	</Layout>
 );
