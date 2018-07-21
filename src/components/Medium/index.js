@@ -1,14 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import styled from 'react-emotion';
 import { Flex, Box } from 'grid-styled/emotion';
 
-const Anchor = styled('a')`
-	color: ${props => props.theme.colors.white};
-	&:hover {
-		text-decoration: none;
-	}
-`;
+import ArticleBlock from './ArticleBlock';
 
 export default () => (
 	<div>
@@ -49,19 +43,14 @@ export default () => (
 						</h3>
 						<Flex flexWrap="wrap">
 							{posts.map(({ node: post }) => (
-								<Box width={[1, 1, 1 / 2]} py={[2, 3]} pr={[2, 4]} key={post.id}>
-									<h3>
-										<Anchor
-											href={`https://medium.com/@jishaal/${post.uniqueSlug}`}
-										>
-											{post.title}
-										</Anchor>
-									</h3>
-									<p>{post.virtuals.subtitle}</p>
-									<span>{post.firstPublishedAt}</span>
-									{' · '}
-									<span>{post.virtuals.readingTime}</span>
-								</Box>
+								<ArticleBlock
+									key={post.id}
+									title={post.title}
+									subtitle={post.virtuals.subtitle}
+									date={post.firstPublishedAt}
+									readingTime={post.virtuals.readingTime}
+									slug={post.uniqueSlug}
+								/>
 							))}
 						</Flex>
 					</Box>

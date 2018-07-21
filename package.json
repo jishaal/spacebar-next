@@ -9,6 +9,7 @@
     "pretty": "prettier \"src/**/*.js\" --write"
   },
   "dependencies": {
+    "date-fns": "^1.29.0",
     "emotion": "^9.2.5",
     "emotion-server": "^9.2.5",
     "emotion-theming": "^9.2.5",
