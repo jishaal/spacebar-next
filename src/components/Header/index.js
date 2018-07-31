@@ -14,13 +14,16 @@ export default () => (
 		display="flex"
 		className={css`
 			align-items: center;
+			justify-content: center;
 		`}
 	>
 		<Link
 			to="/"
 			aria-label="Spacebar"
 			className={css`
-				flex-grow: 1;
+				@media (min-width: 40em) {
+					flex-grow: 1;
+				}
 			`}
 		>
 			<img

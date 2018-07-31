@@ -33,11 +33,11 @@ export default ({ children }) => (
 					<title>{data.site.siteMetadata.title}</title>
 					<meta
 						name="description"
-						content="Jishaal Kalyan is a software developer from Auckland, New Zealand. He specialises in frontend engineering, with a focus on the user experience."
+						content="Jishaal Kalyan is a software developer from Auckland, New Zealand. He specialises in frontend engineering, with a focus on user experience."
 					/>
 					<meta
 						name="keywords"
-						content=" jishaal, kalyan, developer, engineer, frontend, react, redux, javascript"
+						content=" jishaal, kalyan, developer, engineer, frontend, react, redux, javascript, auckland, xero"
 					/>
 					<meta
 						name="google-site-verification"

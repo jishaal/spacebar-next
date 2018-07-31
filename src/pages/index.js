@@ -17,7 +17,16 @@ export default () => (
 	<Layout>
 		<Box color="blue">
 			<Container>
-				<Box width={[1, 1, 1 / 2]} py={[1, 2, 3]}>
+				<Box
+					width={[1, 1, 1 / 2]}
+					py={[1, 2, 3]}
+					css={`
+						text-align: center;
+						@media (min-width: 40em) {
+							text-align: inherit;
+						}
+					`}
+				>
 					<h1>
 						<span role="img" aria-label="waving-hand">
 							👋
