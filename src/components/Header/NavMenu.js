@@ -8,7 +8,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 const ListItem = styled('li')`
 	margin: 0.25rem;
 
-	@media (min-width: 40em) {
+	@media (min-width: 44em) {
 		margin-right: 1em;
 
 		&:last-child {
@@ -44,7 +44,7 @@ const MobileMenuButton = styled('button')`
 	cursor: pointer;
 	color: ${props => props.theme.colors.blue};
 
-	@media (min-width: 40em) {
+	@media (min-width: 44em) {
 		display: none;
 	}
 `;
@@ -61,7 +61,7 @@ const Mask = styled('div')`
 	background: ${props => props.theme.colors.blue};
 	opacity: 0.5;
 
-	@media (min-width: 40em) {
+	@media (min-width: 44em) {
 		display: none;
 	}
 `;
@@ -102,7 +102,7 @@ class NavMenu extends Component {
 						transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.16, 0.99),
 							color 0.3s ease;
 
-						@media (min-width: 40em) {
+						@media (min-width: 42em) {
 							flex-direction: row;
 							height: auto;
 							width: auto;

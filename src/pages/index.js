@@ -1,10 +1,12 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import { Box, Flex } from 'grid-styled/emotion';
 
 import Layout, { Container } from '../components/Layout';
 import Medium from '../components/Medium';
 import SocialMediaBlock from '../components/SocialMediaBlock';
+
+import me from '../../assets/me.png';
 
 const Anchor = styled('a')`
 	color: ${props => props.theme.colors.blue};
@@ -17,34 +19,37 @@ export default () => (
 	<Layout>
 		<Box color="blue">
 			<Container>
-				<Box
-					width={[1, 1, 1 / 2]}
-					py={[1, 2, 3]}
-					css={`
-						text-align: center;
-						@media (min-width: 40em) {
-							text-align: inherit;
-						}
-					`}
-				>
-					<h1>
-						<span role="img" aria-label="waving-hand">
-							👋
-						</span>{' '}
-						Hi, I'm Jishaal
-					</h1>
-					<h3>
-						Frontend Developer, currently at{' '}
-						<Anchor href="https://www.xero.com">Xero</Anchor>
-					</h3>
-					<p>
-						My passion is in the space of frontend engineering and how to manage this at
-						scale while delivering the best experience for users. I work with
-						technologies such as <strong>React</strong>, <strong>Redux</strong> and{' '}
-						<strong>Node.js</strong>, writing performant and maintainable{' '}
-						<strong>JavaScript</strong> code.
-					</p>
-				</Box>
+				<Flex flexWrap="wrap" alignItems="center">
+					<Box width={[1, 2 / 3, 1 / 2]} py={[1, 2, 5]}>
+						<h1>
+							Hi, I'm Jishaal{' '}
+							<span role="img" aria-label="waving-hand">
+								👋
+							</span>{' '}
+						</h1>
+						<h3>
+							Frontend Developer, currently @<Anchor href="https://www.xero.com">
+								Xero
+							</Anchor>
+						</h3>
+						<p>
+							I work with technologies such as <strong>React</strong>,{' '}
+							<strong>Redux</strong> and <strong>Node.js</strong>, writing performant
+							and maintainable <strong>JavaScript</strong> code.
+						</p>
+					</Box>
+					<Box ml="auto">
+						<img
+							src={me}
+							alt="image of jishaal"
+							className={css`
+								max-width: 13rem;
+								margin-bottom: 0;
+								display: block;
+							`}
+						/>
+					</Box>
+				</Flex>
 			</Container>
 		</Box>
 		<Box bg="blue" color="white">
