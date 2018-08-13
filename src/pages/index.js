@@ -38,7 +38,7 @@ export default () => (
 							and maintainable <strong>JavaScript</strong> code.
 						</p>
 					</Box>
-					<Box ml="auto">
+					<Box m={["auto", "auto", "0 0 0 auto"]}>
 						<img
 							src={me}
 							alt="image of jishaal"
